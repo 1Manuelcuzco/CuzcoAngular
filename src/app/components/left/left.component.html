@@ -1,0 +1,71 @@
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <h2 class="text-center">Presentación</h2>
+        <img src="assets/img/carrusel1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Cuzco Ramos Manuel</h5>
+            <p class="card-text">Soy estudiante de la escuela academico profesional de ingenieria de sistemas de la Universidad Nacional de Cajamarca.</p>
+        </div>
+
+        <div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com/usuario" target="_blank" class="icon-facebook">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com/usuario" target="_blank" class="icon-twitter">twitter</a>
+                    </li>
+                    <li>
+                        <a href="http://www.googleplus.com/usuario" target="_blank" class="icon-google-plus">google-plus</a>
+                    </li>
+                    <li>
+                        <a href="http://www.pinterest.com/usuario" target="_blank" class="icon-pinterest">pinterest</a>
+                    </li>
+                    <li>
+                        <a href="mailto:contacto@dominio.com" class="icon-envelop"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Telefono: 940371162</li>
+            <li class="list-group-item">Direccion: Tartar Chico-Baños del Inca</li>
+            <li class="list-group-item">Email: <a href="mailto:mcuzcor15_2@unc.edu.pe">mcuzcor15_2@unc.edu.pe</a> </li>
+        </ul>
+
+    </div>
+    <br>
+    <div class="">
+        <br>
+        <h2>{{titulo}}</h2>
+        <br>
+        <ul>
+            <li *ngFor="let item of items">{{item}}</li>
+        </ul>
+    </div>
+    <div class="">
+        <br>
+        <button (click)='showNoticias()' class="btn">
+                {{estadoNoticias ? 'Ocultar Noticias': 'Ver Noticias'}}
+            </button>
+        <div *ngIf='estadoNoticias' class="myComponent">
+            <h2>{{title}}</h2>
+            <br>
+            <ul>
+                <li *ngFor='let item of noticias'>{{item}}</li>
+            </ul>
+        </div>
+
+        <form (submit)='nuevaNoticia(noticia)'>
+            <input #noticia type="text" class="form-control" name="noticia" placeholder="Nueva Noticia">
+        </form>
+
+        <div>
+            <h3>Modificando del contenido</h3>
+            <label for="title">Nuevo Contenido:</label>
+            <input type="text" name="title" placeholder="Nuevo contenido" [(ngModel)]="title">
+        </div>
+    </div>
+</div>
