@@ -8,5 +8,4 @@ import { DatosService } from './servicios/my.service';
 })
 export class AppComponent {
   title = 'myApp01';
-  
 }

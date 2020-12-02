@@ -1,3 +1,29 @@
+<!--
+<br>
+<button (click)='showDatos()' type="button" class="btn btn-success">
+   
+</button>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Body</th>
+            <th scope="col">Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let paciente of pacientes">
+            <th scope="row"></th>
+            <td>{{paciente.nombre}}</td>
+            <td>{{paciente.apellido}}</td>
+            <td>{{paciente.direccion}}</td>
+            <td>{{paciente.dni}}</td>
+        </tr>
+
+    </tbody>
+</table>
+-->
 <br>
 <button (click)='showDatos()' type="button" class="btn btn-success">
     {{estado ? 'Ocultar Datos': 'Ver Datos Post'}}
@@ -13,7 +39,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let dato of datos">
-            <th scope="row">1</th>
+            <th scope="row"></th>
             <td>{{dato.id}}</td>
             <td>{{dato.title}}</td>
             <td>{{dato.body}}</td>

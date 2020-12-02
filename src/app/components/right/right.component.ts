@@ -16,15 +16,7 @@ estadoNoticias: boolean;
   }
 
   ngOnInit(): void {
+    
   }
-
-  showNoticias(){
-    return this.estadoNoticias= !this.estadoNoticias;
-  }
-
-  nuevaNoticia(noticia){
-    this.noticias.push(noticia.value);
-    noticia.value = '';
-    return false;
-  }
+  
 }

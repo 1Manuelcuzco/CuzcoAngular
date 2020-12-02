@@ -10,6 +10,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './components/post/post.component';
+import { LoginComponent } from './components/login/login.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import { PostpacientesComponent } from './components/postpacientes/postpacientes.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +21,14 @@ import { PostComponent } from './components/post/post.component';
     LeftComponent,
     RightComponent,
     FooterComponent,
-    PostComponent
+    PostComponent,
+    LoginComponent,
+    PostpacientesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   bootstrap: [AppComponent]
